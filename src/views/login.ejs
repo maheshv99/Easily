@@ -1,0 +1,28 @@
+
+<% if(error) {%>
+<div class="alert alert-danger" role="alert">
+  <%= error %>
+</div>
+<% } %>
+
+<div><div class="container p-3 mx-auto w-50 form-box my-5 rounded-md">
+    <h2 style="color: white" class="text-center mb-3">Login</h2>
+    <form action="/login" method="post">
+  
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="email" class="form-control" placeholder="enter your email" name="email" aria-label="email" aria-describedby="basic-addon1" required>
+          </div>
+        
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+            <input type="password" class="form-control" placeholder="enter your password" name="password" aria-label="password" aria-describedby="basic-addon1" required>
+          </div>
+        
+          <button class="w-100 mb-3 mt-2 btn btn-md btn-success" type="submit">
+            Login
+          </button>
+        
+        </form>
+  </div>
+  </div>
